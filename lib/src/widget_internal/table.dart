@@ -132,8 +132,8 @@ class InternalTableState extends State<InternalTable> {
                   child: ScrollShadow(
                     size: data.scrollShadowSize,
                     color: data.scrollShadowColor,
-                    fadeInCurve: data.scrollShadowFadeInCurve,
-                    fadeOutCurve: data.scrollShadowFadeOutCurve,
+                    // fadeInCurve: data.scrollShadowFadeInCurve,
+                    // fadeOutCurve: data.scrollShadowFadeOutCurve,
                     duration: data.scrollShadowDuration,
                     child: data.visibleScrollbar
                         ? Scrollbar(
@@ -162,8 +162,8 @@ class InternalTableState extends State<InternalTable> {
                   child: ScrollShadow(
                     size: data.scrollShadowSize,
                     color: data.scrollShadowColor,
-                    fadeInCurve: data.scrollShadowFadeInCurve,
-                    fadeOutCurve: data.scrollShadowFadeOutCurve,
+                    // fadeInCurve: data.scrollShadowFadeInCurve,
+                    // fadeOutCurve: data.scrollShadowFadeOutCurve,
                     duration: data.scrollShadowDuration,
                     child: ListView(
                       controller: _restColumnsController,
@@ -185,8 +185,8 @@ class InternalTableState extends State<InternalTable> {
                   child: ScrollShadow(
                     size: data.scrollShadowSize,
                     color: data.scrollShadowColor,
-                    fadeInCurve: data.scrollShadowFadeInCurve,
-                    fadeOutCurve: data.scrollShadowFadeOutCurve,
+                    // fadeInCurve: data.scrollShadowFadeInCurve,
+                    // fadeOutCurve: data.scrollShadowFadeOutCurve,
                     duration: data.scrollShadowDuration,
                     child: data.visibleScrollbar
                         ? Scrollbar(
@@ -274,8 +274,8 @@ class InternalTableState extends State<InternalTable> {
                   child: ScrollShadow(
                     size: data.scrollShadowSize,
                     color: data.scrollShadowColor,
-                    fadeInCurve: data.scrollShadowFadeInCurve,
-                    fadeOutCurve: data.scrollShadowFadeOutCurve,
+                    // fadeInCurve: data.scrollShadowFadeInCurve,
+                    // fadeOutCurve: data.scrollShadowFadeOutCurve,
                     duration: data.scrollShadowDuration,
                     child: ListView(
                       controller: _headController,
