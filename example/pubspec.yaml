@@ -16,6 +16,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   import_sorter: ^4.6.0
+  linked_scroll_controller: ^0.2.0
 
 flutter:
   uses-material-design: true

@@ -89,7 +89,7 @@ packages:
     source: hosted
     version: "4.6.0"
   linked_scroll_controller:
-    dependency: transitive
+    dependency: "direct dev"
     description:
       name: linked_scroll_controller
       url: "https://pub.dartlang.org"

@@ -95,41 +95,6 @@ class _MyHomePageState extends State<_MyHomePage> {
         ),
       );
 
-  ExpandableTable _buildSimpleTable() {
-    const int columnsCount = 20;
-    const int rowsCount = 20;
-    //Creation header
-    final List<ExpandableTableHeader> headers = List.generate(
-      columnsCount - 1,
-      (index) => ExpandableTableHeader(
-        width: index % 2 == 0 ? 200 : 150,
-        cell: _buildCell('Column $index'),
-      ),
-    );
-    //Creation rows
-    final List<ExpandableTableRow> rows = List.generate(
-      rowsCount,
-      (rowIndex) => ExpandableTableRow(
-        height: rowIndex % 2 == 0 ? 50 : 70,
-        firstCell: _buildCell('Row $rowIndex'),
-        cells: List<ExpandableTableCell>.generate(
-          columnsCount - 1,
-          (columnIndex) => _buildCell('Cell $rowIndex:$columnIndex'),
-        ),
-      ),
-    );
-
-    return ExpandableTable(
-      firstHeaderCell: _buildCell('Simple\nTable'),
-      headers: headers,
-      scrollShadowColor: _accentColor,
-      rows: rows,
-      visibleScrollbar: true,
-      trackVisibilityScrollbar: true,
-      thumbVisibilityScrollbar: true,
-    );
-  }
-
   static const int columnsCount = 20;
   static const int subColumnsCount = 2;
   static const int rowsCount = 6;
@@ -188,12 +153,12 @@ class _MyHomePageState extends State<_MyHomePage> {
     );
 
     return ExpandableTable(
-      firstHeaderCell: _buildCell('Expandable\nTable'),
+      firstHeaderCell: _buildCell('Expandable\nTable 333'),
       rows: _generateRows(rowsCount),
       headers: headers,
       defaultsRowHeight: 60,
       defaultsColumnWidth: 150,
-      firstColumnWidth: 250,
+      firstColumnWidth: 100,
       scrollShadowColor: _accentColor,
       visibleScrollbar: true,
       expanded: false,
@@ -204,27 +169,14 @@ class _MyHomePageState extends State<_MyHomePage> {
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
           title: const Text(
-              '   Simple Table                    |                    Expandable Table'),
+              'Expandable Table'),
           centerTitle: true,
         ),
         body: Container(
           color: _accentColor,
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: _buildSimpleTable(),
-                ),
-              ),
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: _buildExpandableTable(),
-                ),
-              ),
-            ],
+          child: Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: _buildExpandableTable(),
           ),
         ),
       );
